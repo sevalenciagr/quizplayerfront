@@ -1,0 +1,14 @@
+/*** Pager ***/
+.pager {padding-top:25px;}
+.pager ul {list-style:none; margin:0; padding:0;}
+.pager li {display:inline-block; vertical-align:top;}
+.pager li a, .pager li span {border-radius:50%; display:block; font-weight:bold; height:40px; line-height:2.5rem; text-align:center; width:40px;}
+.pager li a {position:relative;}
+.pager li a:before {background-position:center; background-repeat:no-repeat; content:" "; height:13px; left:50%; position:absolute; top:50%; transform:translate(-50%,-50%); width:13px;}
+.pager li.item-first a:before {background-image:url(#{$root-images}/icon-pager_first.svg);}
+.pager li.item-prev a:before {background-image:url(#{$root-images}/icon-pager_prev.svg);}
+.pager li.item-next a:before {background-image:url(#{$root-images}/icon-pager_next.svg);}
+.pager li.item-last a:before {background-image:url(#{$root-images}/icon-pager_last.svg);}
+.pager li span {background:#b6cb2a;}
+.pager li.item-active span {color:#fff;}
+

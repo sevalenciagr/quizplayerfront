@@ -1,0 +1,86 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Quiz Player
+  </h1></div>
+  <div class="col-md-12">
+    <mat-card>
+      <form [formGroup]="form">
+        <mat-card>
+        <h2>Jugador </h2>  
+        <div class="row">        
+          <mat-form-field class="col-md-6">
+              <input pInputText type="text" matInput placeholder="Identificación" formControlName="playerCode" class="btn-w100" disabled />
+          </mat-form-field>
+          <mat-form-field class="col-md-6">
+            <input pInputText type="text" matInput placeholder="Nombre" formControlName="playerName" class="btn-w100" disabled />
+        </mat-form-field>
+        </div>  
+        <div class="row">   
+          <mat-form-field class="col-md-4">
+            <input disabled pInputText type="text" matInput placeholder="Puntos" formControlName="playerPoint" class="btn-w100"  />
+          </mat-form-field>
+          <mat-form-field class="col-md-4">
+            <input disabled pInputText type="text" matInput placeholder="Nivel" formControlName="playerLevel" class="btn-w100" />
+          </mat-form-field>
+          <mat-form-field class="col-md-4">
+            <input disabled pInputText type="text" matInput placeholder="Respuestas" formControlName="playerCounter" class="btn-w100" />
+          </mat-form-field>
+        </div>
+      </mat-card>
+      <mat-card>
+        <h2>Partida </h2>  
+        <div class="row">
+          <mat-form-field class="col-md-4">
+            <button type="button" label="Iniciar" icon="icon-play" class="btn btn-main btn-w100" name="btnPlay">
+            </button>
+          </mat-form-field>
+          <mat-form-field class="col-md-4">    
+            <button type="button" label="Detener" icon="icon-stop" class="btn btn-main btn-w100" name="btnStop">
+            </button>
+          </mat-form-field>
+          <mat-form-field class="col-md-4">
+            <input disabled pInputText type="text" matInput placeholder="Id Game" formControlName="gameId" class="btn-w100"  />
+          </mat-form-field>
+        </div>
+      </mat-card>
+      <mat-card>
+        <h2>Preguntas </h2>  
+        <div class="row">
+            <mat-form-field class="col-md-4">
+              <input disabled pInputText type="text" matInput placeholder="Pregunta" formControlName="question" class="btn-w100"  />
+            </mat-form-field>
+          </div>
+        <div class="row">
+          <mat-form-field class="col-md-6">    
+            <button type="button" label="Opción 1"  class="btn btn-main btn-w100"
+             name="btnOption1">
+            </button>
+          </mat-form-field>
+          <mat-form-field class="col-md-6">   
+            <button type="button" label="Opción 2"  class="btn btn-main btn-w100"
+             name="btnOption2">
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field class="col-md-6">    
+            <button type="button" label="Opción 3"  class="btn btn-main btn-w100"
+             name="btnOption3">
+            </button>
+          </mat-form-field>
+          <mat-form-field class="col-md-6"> 
+            <button type="button" label="Opción 4"  class="btn btn-main btn-w100"
+             name="btnOption4">
+            </button>
+          </mat-form-field>
+        </div>
+      </mat-card>
+      </form>
+    </mat-card>
+
+  </div>
+
+
+
+<router-outlet></router-outlet>

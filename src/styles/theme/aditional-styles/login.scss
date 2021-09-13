@@ -1,0 +1,32 @@
+
+/* Login */
+.login__container {left:50%; max-width:100%; position:absolute; top:50%; transform:translate(-50%,-50%);}
+.login--box {background-image:url(#{$root-images}bg-header.png); background-color:#333; background-repeat:no-repeat; box-shadow:0 15px 30px rgba(0,0,0,0.2);}
+.login--box .row {margin:0;}
+.login__logo {padding:50px;}
+.logo__container {background:#303030; border-radius:50%; box-shadow:0 10px 30px rgba(0,0,0,0.5), inset 0 2px 1px rgba(255,255,255,0.1), inset 0 -2px 1px rgba(255,255,255,0.3); height:200px; position:relative; width:200px;}
+.logo__container img {left:50%; position:absolute; top:50%; transform:translate(-50%,-50%); width:120px;}
+.login__fields .field {position:relative;}
+.login__fields .field:not(:last-child) {margin-bottom:30px;}
+.login__fields .field input {background-color:transparent; background-position:left center; background-repeat:no-repeat; background-size:30px 30px; color:#fff; border-bottom:1px solid #fff; box-shadow:none; margin:0; padding:10px 10px 10px 50px; position:relative; z-index:2;}
+.login__fields .field.field-user input {background-image:url(#{$root-images}icon-usuarios_w.svg);}
+.login__fields .field.field-password input {background-image:url(#{$root-images}icon-key_w.svg);}
+.login__fields .field label {color:#fff; font-size:0.8em; font-weight:bold; left:50px; position:absolute; text-transform:uppercase; transition:all 0.3s; z-index:1;}
+.login__fields .field label.empty {top:13px;}
+.login__fields .field input:focus + label, .login__fields .field label.not-empty {color:#999; font-size:0.7em; top:-8px;}
+
+.login__fields .field-actions .btn {max-width:200px;}
+.login--links {padding:15px;}
+.login--links a {color:#fff; font-size:0.9em; font-weight:bold;}
+
+@media screen and (min-width:576px) {
+    .login__container {width:630px;}
+    .login--box {background-position:-174px center; border-radius:200px 20px 20px 200px;}
+    .login__fields {padding:50px 30px 30px 0;}
+    .login__fields .field-actions {text-align:right;}
+}
+@media screen and (max-width:575px) {
+    .login--box {background-position:center -174px ; border-radius:200px 200px 20px 20px;}
+    .login__fields {padding:0 30px 30px;}
+    .login__fields .field-actions {text-align:center;}
+}

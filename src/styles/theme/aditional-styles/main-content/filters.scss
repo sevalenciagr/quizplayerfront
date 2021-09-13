@@ -1,0 +1,11 @@
+/* Filters */
+.filter__header {background:#b6cb2a; position:relative;}
+.filter__header h3 {font-size:1.1em; font-weight:700; margin:0; text-transform:uppercase;}
+.filter__content {background:#ddd;}
+.radio-group input[type="radio"] {display:none;}
+.radio-group input[type="radio"] + label {font-weight:300; padding-left:36px; position:relative;}
+.radio-group input[type="radio"] + label:before {border:2px solid #303030; border-radius:50%; content:" "; height:18px; left:0; opacity:0.4; position:absolute; width:18px;}
+.radio-group input[type="radio"] + label:hover:before {opacity:0.8;}
+.radio-group input[type="radio"]:checked + label {font-weight:normal;}
+.radio-group input[type="radio"]:checked + label:before {background:#303030; box-shadow:0 3px 10px rgba(0,0,0,0.4); opacity:1;}
+.field-select label {display:block; font-weight:normal;}

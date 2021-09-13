@@ -1,0 +1,18 @@
+/*** Table **/
+.table-container {max-width:100%; overflow-x:scroll;}
+.panel.display-table .panel-container {display:table; font-size:0.9em; min-width:745px; width:100%;}
+.panel.display-table .item {display:table-row; position:relative; z-index:1;}
+.panel.display-table .item:not(.item-header):not(:last-child) > div{border-bottom:1px solid #ddd;}
+.panel.display-table .item:not(.item-header) {background:#fff;}
+.panel.display-table .item.item-header {font-weight:700;}
+.panel.display-table .item > div {display:table-cell; line-height:1em; padding:10px; text-align:center; vertical-align:middle;}
+.panel.display-table .item .icon-status {width:20px;}
+.panel.display-table .item .btn-group__actions {padding:0; width:90px;}
+.panel.display-table .item .btn-group__actions a {max-width:45px; position:relative; padding:12px 14px;}
+.panel.display-table .item .btn-group__actions a:after {content:" "; height:100%; position:absolute; right:0; top:0; width:0; z-index:1;}
+.panel.display-table .item:hover .btn-group__actions a:after {width:100%;}
+.panel.display-table .item .btn-group__actions a:before {transition:none; z-index:2;}
+.panel.display-table .item .btn-group__actions .btn-edit:after {background:#b6cb2a;}
+.panel.display-table .item .btn-group__actions .btn-remove:after {background:#cb482a;}
+.panel.display-table .item:hover .btn-group__actions .btn-edit:before {background-image:url(../images/icon-edit_w.svg);}
+.panel.display-table .item:hover .btn-group__actions .btn-remove:before {background-image:url(../images/icon-remove_w.svg);}

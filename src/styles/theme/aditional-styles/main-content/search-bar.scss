@@ -1,0 +1,27 @@
+/*** Search Bar ***/
+.search-bar .search-container {position:relative;}
+.search-bar .search__input {border:none;  box-shadow:0 5px 15px rgba(0,0,0,0.15); height:40px; margin:0; padding:10px 30px; min-width:100%; text-align:left;}
+.search-bar .search__button {background:transparent; border:none; height:30px; padding:7px; position:absolute; right:20px; top:5px; width:30px;}
+.search-bar .search__button:focus {outline:none;}
+.search-bar .search__button:before {content:url(#{$root-images}icon-search.svg);}
+
+@media screen and (min-width:1025px) {
+    .filter__header {max-height:100px; padding:40px 30px;}
+    .filter__content {padding:30px; margin-bottom:30px;}
+    .search-bar {padding:0 30px;}
+}
+@media screen and (max-width:1024px) {
+    .filter__header {padding:16px 20px; max-height:50px;}
+    .filter__toggle {height:50px; position:absolute; right:0; top:0; width:50px;}
+    .filter__toggle:before, .filter__toggle:after {background:#303030; content:" "; left:50%; position:absolute; top:50%;}
+    .filter__toggle:before {height:2px; margin:-1px 0 0 -10px; width:20px;}
+    .filter__toggle:after {height:20px; margin:-10px 0 0 -1px; width:2px;}
+    .open .filter__toggle:after {height:0; margin:0 0 0 -1px;}
+    .filter__content {padding:0 20px;}
+    .filter__actions .btn {max-width:230px;}
+    .filter__content, .search-bar {max-height:0; opacity:0; overflow:hidden; transition:all 0.2s;}
+    .open .filter__content, .open .search-bar {max-height:initial; opacity:1;}
+    .open .filter__content {padding:20px;}
+    .search-bar {padding:0 20px;}
+    .open .search-bar {padding:20px;}
+}

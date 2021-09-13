@@ -1,0 +1,150 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ngx-toastr/toastr.css";
+@import '~@angular/material/theming';
+@include mat-core();
+
+$my-app-primary: mat-palette($mat-green);
+$my-app-accent: mat-palette($mat-green);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent);
+
+@include angular-material-theme($my-app-theme);
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+@import "./styles/theme/app.scss";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+.fa.fa-asterisk {
+  font-size: 10px;
+}
+.igx-input-group__bundle-main {
+  padding: 0px !important;
+  margin-top: 5px !important;
+  width: 50px !important;
+}
+
+label.igx-grid-paginator__label {
+  margin-top: 8px !important;
+}
+
+.igx-overlay__wrapper {
+  z-index: 10002 !important;
+}
+.igx-drop-down__list--select {
+  z-index: 10003 !important;
+}
+mat-form-field.mat-form-field {
+  font-size: 22px;  
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: black;
+}
+.mat-input-element {
+  caret-color: black;
+}
+.fuente-campos {
+  font-size: 16px !important;
+}
+.mat-tooltip {
+  font-size: 14px !important;
+}
+.igx-drop-down__item--selected .igx-checkbox__composite {
+  border-color: #b9bf04 !important;
+  background: #b9bf04 !important;
+}
+.igx-drop-down__item--selected {
+  background: #d4d4d4 !important;
+  color: #000 !important;
+}
+.igx-drop-down__item--selected:hover {
+  background: #adadad !important;
+  color: #000 !important;
+}
+.igx-checkbox--indeterminate .igx-checkbox__composite::after,
+.igx-checkbox--checked .igx-checkbox__composite::after {
+  background: #b9bf04 !important;
+}
+.igx-checkbox--disabled .igx-checkbox__composite {
+  border-color: #adadad !important;
+}
+
+.igx-column-hiding__buttons > .igx-button--flat {
+  color: #6e6e6d !important;
+  background: #d4d4d4 !important;
+  padding: 1px !important;
+}
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: black;
+}
+
+.igx-column-hiding__buttons {
+  justify-content: space-between !important;
+  padding: 0.5rem 0.4rem !important;
+}
+
+.igx-button--flat:hover {
+  color: #6e6e6d !important;
+  background: #d4d4d450 !important;
+}
+
+.igx-checkbox--checked .igx-checkbox__composite {
+  border-color: #adadad !important;
+  background: none !important;
+}
+
+.igx-dialog__window-actions > .igx-button--flat {
+  color: #6e6e6d !important;
+  background: #d4d4d4 !important;
+}
+
+.igx-button--flat .igx-button--disabled {
+  background: #adadad !important;
+}
+
+.igx-grid__td--active {
+  box-shadow: none !important;
+}
+
+.igx-checkbox--checked:hover .igx-checkbox__ripple::after, .igx-checkbox--checked:active .igx-checkbox__ripple::after{
+  background-color: #6E6E6E !important;
+}
+
+.igx-checkbox__ripple.igx-ripple{
+  background-color: white !important;
+  color: white !important;
+}
+.igx-ripple{
+  background-color: white !important;
+  color: white !important;
+}
+
+.igx-grid__tr--highlighted::after{
+  background-color: white !important;
+}
+.igx-button--flat {
+  color: #6e6e6d !important;
+}
+.igx-overlay__content{
+  min-width: 228.234px;
+}
+.igx-button--flat:focus, .igx-button--flat:active {
+  background: rgba(146, 146, 146, 0.12) !important;
+}
+
+
+.igx-grid__tr--selected {
+  color: #000;
+ background: #e0e0e0 !important;
+}
+.igx-grid__tr--selected .igx-grid__td--selected {
+  background:#d1d1d1 !important;
+}
+
+$custom-file-text: (
+  en: "Browse",
+  es: "Elegir"
+);
